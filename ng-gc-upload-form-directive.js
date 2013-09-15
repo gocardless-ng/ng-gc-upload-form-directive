@@ -3,7 +3,11 @@
  * (c) 2013-2013 GoCardless, Ltd.
  * https://github.com/gocardless-ng/ng-gc-upload-form-directive.git
  * License: MIT
- */angular.module('gc-upload-form-template.html', []).run(function($templateCache) {
+ */
+(function(){
+'use strict';
+
+angular.module('gc-upload-form-template.html', []).run(['$templateCache', function($templateCache) {
   $templateCache.put('gc-upload-form-template.html',
     '<div><form action="{{formAction}}" name="uploadForm" novalidate="" stop-propagation="submit" gc-upload="{\n' +
     '      onUploadEnd: handleUploadEnd\n' +
@@ -11,7 +15,7 @@
     '          \'btn--block\': !isInlineUpload,\n' +
     '          \'btn--small\': isInlineUpload\n' +
     '        }" id="fileUploadBtn" ng-disabled="uploadForm.$pristine || !uploadForm.file.$viewValue || $isUploading"><span>Upload<span ng-show="$isUploading">ing...</span></span></button></div></form></div>');
-});
+}]);
 
 'use strict';
 
@@ -72,3 +76,4 @@ angular.module('gc.uploadForm', [
 
   }
 ]);
+})();

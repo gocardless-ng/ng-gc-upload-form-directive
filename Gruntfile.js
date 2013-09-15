@@ -78,7 +78,10 @@ module.exports = function(grunt) {
           ' * (c) 2013-<%= grunt.template.today("yyyy") %> GoCardless, Ltd.\n' +
           ' * <%= pkg.repository.url %>\n' +
           ' * License: MIT\n' +
-          ' */',
+          ' */\n' +
+          '(function(){\n' +
+          '\'use strict\';\n\n',
+        footer: '})();'
       },
       build: {
         src: ['<%= config.build %>/*.js'],

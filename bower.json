@@ -3,7 +3,10 @@
   "version": "0.1.0",
   "main": "ng-gc-upload-form-directive.js",
   "dependencies": {
-    "bower-angular": "git@github.com:angular/bower-angular.git#v1.2.0-rc.2"
+    "bower-angular": "git@github.com:angular/bower-angular.git#v1.2.0-rc.2",
+    "ng-gc-file-directive": "git@github.com:gocardless-ng/ng-gc-file-directive.git",
+    "ng-gc-upload-directive": "git@github.com:gocardless-ng/ng-gc-upload-directive.git",
+    "ng-gc-stop-propagation-directive": "git@github.com:gocardless-ng/ng-gc-stop-propagation-directive.git"
   },
   "devDependencies": {
     "bower-angular-mocks": "git@github.com:angular/bower-angular-mocks.git#v1.2.0-rc.2",
